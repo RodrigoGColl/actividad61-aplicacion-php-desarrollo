@@ -1,17 +1,20 @@
-CREATE TABLE empleados (
-  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-  apellido VARCHAR(100) NOT NULL,
-  nombre VARCHAR(100) NOT NULL,
-  edad INT UNSIGNED NOT NULL,
-  puesto VARCHAR(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE personajes (
+    personaje_id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(50) NOT NULL,
+    raza VARCHAR(30) NOT NULL,
+    clase VARCHAR(30) NOT NULL,
+    nivel INT NOT NULL,
+    faccion VARCHAR(20) NOT NULL
+);
 
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Coloma', 'Javier', 25, 'Contable');
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Oviedo', 'Carmen', 34, 'Administrativo');
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Vargas', 'Pascual', 19, 'Dependiente');
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Donoso', 'Maria', 45, 'Gerente');
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Celis', 'Manuel', 56, 'Dependiente');
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Palencia', 'Jana', 31, 'Dependiente');
-INSERT INTO empleados (apellido, nombre, edad, puesto) VALUES('Zamanillo', 'Pedro', 63, 'Repartidor');
-
-
+INSERT INTO personajes (nombre, raza, clase, nivel, faccion) VALUES
+('Thrall', 'Orco', 'Chamán', 60, 'Horda'),
+('Jaina Proudmoore', 'Humana', 'Maga', 60, 'Alianza'),
+('Sylvanas Windrunner', 'Elfa Nocturna', 'Cazadora', 60, 'Horda'),
+('Anduin Wrynn', 'Humano', 'Sacerdote', 60, 'Alianza'),
+('Illidan Stormrage', 'Elfo de la Noche', 'Cazador de Demonios', 60, 'Neutral'),
+('Tyrande Whisperwind', 'Elfa de la Noche', 'Sacerdotisa', 60, 'Alianza'),
+('Voljin', 'Trol', 'Cazador de Sombras', 60, 'Horda'),
+('Genn Cringrís', 'Huargen', 'Guerrero', 60, 'Alianza'),
+('Kaelthas Sunstrider', 'Elfo de Sangre', 'Mago', 60, 'Horda'),
+('Malfurion Stormrage', 'Elfo de la Noche', 'Druida', 60, 'Alianza');

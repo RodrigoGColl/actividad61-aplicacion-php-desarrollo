@@ -1,51 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alta empleado/a</title>
+    <title>Alta de Personaje</title>
 </head>
 <body>
 <div>
 	<header>
-		<h1>ELECTROSHOP S.L.</h1>
+		<h1>Gestión de Personajes</h1>
 	</header>
 	<main>				
 	<ul>
 		<li><a href="index.php">Inicio</a></li>
 		<li><a href="add.html">Alta</a></li>
 	</ul>
-	<h2>Alta empleado/a</h2>
-<!--FORMULARIO DE ALTA. Al hacer click en el botón Agregar, llama a la página: add.php (form action="add.php")
-La página: add.php se encargará de proceder a la inserción del registro en la tabla de empleados
--->
+	<h2>Alta de Personaje</h2>
 
 	<form action="add_action.php" method="post">
 		<div>
-			<label for="name">Nombre</label>
-			<input type="text" name="name" id="name" placeholder="nombre" required>
+			<label for="nombre">Nombre</label>
+			<input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
 		</div>
 
 		<div>
-			<label for="surname">Apellido</label>
-			<input type="text" name="surname" id="surname" placeholder="apellido" required>
+			<label for="raza">Raza</label>
+			<input type="text" name="raza" id="raza" placeholder="Raza" required>
 		</div>
 
 		<div>
-			<label for="age">Edad</label>
-			<input type="number" name="age" id="age" placeholder="edad" required>
+			<label for="nivel">Nivel</label>
+			<input type="number" name="nivel" id="nivel" placeholder="Nivel" required>
 		</div>
 
 		<div>
-			<label for="job">Puesto</label>
-			<select name="job" id="job" placeholder="puesto" required>
-				<option value="" disabled selected>Seleccione un puesto</option>
-				<option value="Administrativo">Administrativo</option>
-				<option value="Contable">Contable</option>
-				<option value="Dependiente">Dependiente</option>
-				<option value="Gerente">Gerente</option>
-				<option value="Repartidor">Repartidor</option>
-			</select>	
+			<label for="clase">Clase</label>
+			<input type="text" name="clase" id="clase" placeholder="Clase" required>
+		</div>
+
+		<div>
+			<label for="faccion">Facción</label>
+			<select name="faccion" id="faccion" required>
+				<option value="" disabled selected>Seleccione una facción</option>
+				<option value="Horda">Horda</option>
+				<option value="Alianza">Alianza</option>
+				<option value="Neutral">Neutral</option>
+			</select>
 		</div>
 
 		<div>
@@ -56,7 +56,7 @@ La página: add.php se encargará de proceder a la inserción del registro en la
 	
 	</main>	
 	<footer>
-	Created by the IES Miguel Herrero team &copy; 2025
+		Created by the IES Miguel Herrero team &copy; 2025
   	</footer>
 </div>
 </body>
