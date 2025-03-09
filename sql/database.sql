@@ -1,3 +1,7 @@
+
+CREATE DATABASE IF NOT EXISTS actividad61RGC;
+USE actividad61RGC;
+
 CREATE TABLE personajes (
     personaje_id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(50) NOT NULL,
